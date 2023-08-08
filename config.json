@@ -1,0 +1,615 @@
+{
+  "agent": {
+    "run_as_user": "root",
+    "debug": true
+  },
+  "logs": {
+    "logs_collected": {
+      "files": {
+        "collect_list": [
+          {
+            "file_path": "/tmp/test0/test0.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test1.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test2.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test3.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test4.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test5.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test6.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test7.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test8.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test9.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test10.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test11.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test12.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test13.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test14.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test15.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test16.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test17.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test18.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test19.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test20.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test21.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test22.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test23.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test24.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test25.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test26.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test27.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test28.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test29.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test30.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test31.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test32.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test33.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test34.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test35.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test36.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test37.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test38.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test39.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test40.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test41.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test42.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test43.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test44.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test45.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test46.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test47.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test48.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test49.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test50.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test51.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test52.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test53.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test54.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test55.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test56.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test57.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test58.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test59.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test60.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test61.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test62.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test63.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test64.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test65.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test66.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test67.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test68.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test69.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test70.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test71.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test72.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test73.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test74.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test75.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test76.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test77.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test78.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test79.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test80.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test81.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test82.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test83.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test84.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test85.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test86.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test87.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test88.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test89.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test90.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test91.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test92.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test93.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test94.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test95.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test96.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test97.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test98.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test99.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          }
+        ]
+      }
+    },
+    "log_stream_name": "test_log"
+  }
+}

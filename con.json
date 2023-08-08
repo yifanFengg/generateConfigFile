@@ -1,0 +1,27 @@
+{
+  "agent": {
+   "run_as_user": "root",
+    "debug": true
+  },
+  "logs": {
+    "logs_collected": {
+      "files": {
+        "collect_list": [
+          {
+            "file_path": "/tmp/test0/test1.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          },
+          {
+            "file_path": "/tmp/test0/test2.log",
+            "log_group_name": "0",
+            "log_stream_name": "{instance_id}",
+            "retention_in_days": "1"
+          }
+        ]
+      }
+    },
+    "log_stream_name": "test_log"
+  }
+}
