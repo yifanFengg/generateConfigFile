@@ -23,5 +23,35 @@
       }
     },
     "log_stream_name": "test_log"
-  }
+  },
+	"metrics": {
+		"aggregation_dimensions": [
+			[
+				"InstanceId"
+			]
+		],
+		"append_dimensions": {
+			"AutoScalingGroupName": "${aws:AutoScalingGroupName}",
+			"ImageId": "${aws:ImageId}",
+			"InstanceId": "${aws:InstanceId}",
+			"InstanceType": "${aws:InstanceType}"
+		},
+		"namespace": "prototype_metrics",
+		"metrics_collected": {	
+			"procstat":[
+               			 {
+                   		 "pid_file": "/opt/aws/amazon-cloudwatch-agent/var/amazon-cloudwatch-agent.pid",
+                   		 "measurement": [
+                       		 "memory_rss",
+                       		 "cpu_usage",
+				 "memory_data"
+                   		 ],
+                   		 "metrics_collection_interval": 1
+
+               			 }
+            		]
+		}
+	}
+
+  
 }
