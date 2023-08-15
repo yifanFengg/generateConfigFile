@@ -24,7 +24,7 @@ type CollectList struct {
 	FilePath        string `json:"file_path"`
 	LogGroupName    string `json:"log_group_name"`
 	LogStreamName   string `json:"log_stream_name"`
-	RetentionInDays string `json:"retention_in_days"`
+	RetentionInDays int    `json:"retention_in_days"`
 }
 
 type Config struct {
@@ -40,6 +40,16 @@ type Config struct {
 		} `json:"logs_collected"`
 		LogStreamName string `json:"log_stream_name"`
 	} `json:"logs"`
+	Metrics struct {
+		AggregationDimensions [][]string        `json:"aggregation_dimensions"`
+		AppendDimensions      map[string]string `json:"append_dimensions"`
+		Namespace             string            `json:"namespace"`
+		MetricsCollected      map[string][]struct {
+			PidFile                   string   `json:"pid_file"`
+			Measurement               []string `json:"measurement"`
+			MetricsCollectionInterval int      `json:"metrics_collection_interval"`
+		} `json:"metrics_collected"`
+	} `json:"metrics"`
 }
 
 var collectList []CollectList
@@ -78,6 +88,40 @@ func main() {
 			},
 			LogStreamName: "test_log",
 		},
+		Metrics: struct {
+			AggregationDimensions [][]string        `json:"aggregation_dimensions"`
+			AppendDimensions      map[string]string `json:"append_dimensions"`
+			Namespace             string            `json:"namespace"`
+			MetricsCollected      map[string][]struct {
+				PidFile                   string   `json:"pid_file"`
+				Measurement               []string `json:"measurement"`
+				MetricsCollectionInterval int      `json:"metrics_collection_interval"`
+			} `json:"metrics_collected"`
+		}{
+			AggregationDimensions: [][]string{
+				{"InstanceId"},
+			},
+			AppendDimensions: map[string]string{
+				"AutoScalingGroupName": "${aws:AutoScalingGroupName}",
+				"ImageId":              "${aws:ImageId}",
+				"InstanceId":           "${aws:InstanceId}",
+				"InstanceType":         "${aws:InstanceType}",
+			},
+			Namespace: "prototype_metrics",
+			MetricsCollected: map[string][]struct {
+				PidFile                   string   `json:"pid_file"`
+				Measurement               []string `json:"measurement"`
+				MetricsCollectionInterval int      `json:"metrics_collection_interval"`
+			}{
+				"procstat": {
+					{
+						PidFile:                   "/opt/aws/amazon-cloudwatch-agent/var/amazon-cloudwatch-agent.pid",
+						Measurement:               []string{"memory_rss", "cpu_usage", "memory_data"},
+						MetricsCollectionInterval: 1,
+					},
+				},
+			},
+		},
 	}
 
 	// Convert to JSON
@@ -88,7 +132,7 @@ func main() {
 	}
 
 	// Write to file
-	err = os.WriteFile("config.json", jsonData, 0644)
+	err = os.WriteFile("temp_config.json", jsonData, 0644)
 	if err != nil {
 		log.Printf("Error writing file:", err)
 		return
@@ -102,7 +146,7 @@ func CreateDir(j int) {
 	if e := os.MkdirAll(path, 0777); e != nil {
 		log.Printf("error creating directory %v", e)
 	}
-	for i := 0; i < 100; i++ {
+	for i := 0; i < 10; i++ {
 		pathfile := fmt.Sprintf("%s%d%s", path+"test", i, ".log")
 		f, err := os.Create(pathfile)
 		if err != nil {
@@ -112,9 +156,9 @@ func CreateDir(j int) {
 			FilePath:        pathfile,
 			LogGroupName:    strconv.Itoa(j),
 			LogStreamName:   "{instance_id}",
-			RetentionInDays: "1",
+			RetentionInDays: 1,
 		})
-		WriteLogs(f, 500)
+		WriteLogs(f, 5)
 	}
 }
 func WriteLogs(f *os.File, iterations int) {
